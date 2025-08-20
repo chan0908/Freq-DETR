@@ -19,7 +19,8 @@ This archive contains two main directories:
 
 This directory contains the core Python source code for the three novel modules proposed in our paper. These files are provided to allow for a direct inspection of the implementation details of our key contributions.
 
- All the core codes are located in Freq-DETR/ultralytics/ultralytics/nn/modules.
+ <font color="blue">All the core codes are located in Freq-DETR/ultralytics/ultralytics/nn/modules.</font>
+
 
 * **`block.py`**: This file contains the implementation of our Frequency-Enhanced Convolution Module (FECM) and Attention-Guided Selective Feature Pyramid Network(AGS-FPN).
 * **`DSCEncoder.py`**: This file contains the implementation of our Decoupled Frequency-Domain Feature Interaction Module (DSC-Clo Block). It includes the EfficientAttention and EfficientBlock classes that form our modified hybrid encoder.
