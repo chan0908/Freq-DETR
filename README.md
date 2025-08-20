@@ -2,9 +2,8 @@
 
 ## Introduction
 
-This archive is provided as supplementary material to our manuscript, "Freq-DETR: Frequency-Aware Transformer for Real-Time Small Object Detection in Unmanned Aerial Vehicle Imagery." It is intended to address the reviewer's request for materials to aid in the verification and reproduction of our experimental results, and to provide concrete evidence of our research process.
-
-We are confident that these materials demonstrate the authenticity of our work and the implementation of our proposed methods.
+We propose Freq-DETR, a frequency-aware real-time transformer detection framework for small object detection in UAV imagery. Frequency-Enhanced Convolution Module extracts features from dual domains to effectively fuse global frequency information with local spatial features. Decoupled Frequency-Domain Feature Interaction Module  decouples high- and low-frequency feature interactions at the intra-scale level while reducing computational overhead. Attention-Guided Selective Feature Pyramid Network employs an attention mechanism to selectively filter and integrate multi-scale features.
+Currently, this file contains the code for the three core modules proposed. We will reiterate our firm commitment to making the complete, cleaned, and executable source code for this project, along with the trained model weights, publicly available on a GitHub repository subsequently.
 
 ---
 
@@ -19,7 +18,7 @@ This archive contains two main directories:
 
 This directory contains the core Python source code for the three novel modules proposed in our paper. These files are provided to allow for a direct inspection of the implementation details of our key contributions.
 
-**_All the core codes are located in [Freq-DETR/ultralytics/ultralytics/nn/modules](https://github.com/chan0908/Freq-DETR/tree/main/ultralytics/ultralytics/nn/modules)._**
+**_The core codes are located in [Freq-DETR/ultralytics/ultralytics/nn/modules](https://github.com/chan0908/Freq-DETR/tree/main/ultralytics/ultralytics/nn/modules)._**
 
 * **`block.py`**: This file contains the implementation of our Frequency-Enhanced Convolution Module (FECM) and Attention-Guided Selective Feature Pyramid Network(AGS-FPN).
 * **`DSCEncoder.py`**: This file contains the implementation of our Decoupled Frequency-Domain Feature Interaction Module (DSC-Clo Block). It includes the EfficientAttention and EfficientBlock classes that form our modified hybrid encoder.
@@ -36,11 +35,3 @@ This directory contains a sample, unaltered training log from one of our key exp
 This log file serves as direct evidence of the experimental process and provides a transparent record of how our final results were achieved.
 
 ---
-
-## Commitment to Full Reproducibility
-
-We hope this supplementary material fully addresses the reviewer's concerns. We reiterate our firm commitment to making the complete, cleaned, and executable source code for this project, along with the trained model weights, publicly available on a GitHub repository immediately upon acceptance of the manuscript.
-
-Sincerely,
-
-The Authors
